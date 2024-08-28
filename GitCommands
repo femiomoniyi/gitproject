@@ -1,0 +1,9 @@
+
+git status 	- Gives the overview of files.
+git add 	- Adds file for commit.
+git commit 	- Saves for upload/push.
+git push	- Uploads to remote server.
+git pull	- Brings the change from remote to local.
+git branch	- Sees a list of branches.
+git checkout	- Changes branches.
+
