@@ -1,0 +1,43 @@
+Tunde@Tunde-PC MINGW64 ~/gitproject2/Gitproject (main)
+$ git push -u origin main
+To https://github.com/Tunde234/Gitproject.git
+ ! [rejected]        main -> main (non-fast-forward)
+ error: failed to push some refs to 'https://github.com/Tunde234/Gitproject.git'
+ hint: Updates were rejected because the tip of your current branch is behind
+ hint: its remote counterpart. If you want to integrate the remote changes,
+ hint: use 'git pull' before pushing again.
+ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ Tunde@Tunde-PC MINGW64 ~/gitproject2/Gitproject (main)
+ $ git fetch origin
+ From https://github.com/Tunde234/Gitproject
+  * [new branch]      main       -> origin/main
+
+  Tunde@Tunde-PC MINGW64 ~/gitproject2/Gitproject (main)
+  $ git merge origin main
+  merge: origin - not something we can merge
+
+  Tunde@Tunde-PC MINGW64 ~/gitproject2/Gitproject (main)
+  $ git branch
+  * main
+
+  Tunde@Tunde-PC MINGW64 ~/gitproject2/Gitproject (main)
+  $ git pull origin main
+  From https://github.com/Tunde234/Gitproject
+   * branch            main       -> FETCH_HEAD
+   Merge made by the 'ort' strategy.
+    goodjobs.txt | 1 +
+     1 file changed, 1 insertion(+)
+      create mode 100644 goodjobs.txt
+
+      Tunde@Tunde-PC MINGW64 ~/gitproject2/Gitproject (main)
+      $ git push origin main
+      Enumerating objects: 15, done.
+      Counting objects: 100% (14/14), done.
+      Delta compression using up to 8 threads
+      Compressing objects: 100% (11/11), done.
+      Writing objects: 100% (11/11), 1.42 KiB | 364.00 KiB/s, done.
+      Total 11 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+      remote: Resolving deltas: 100% (5/5), completed with 3 local objects.
+      To https://github.com/Tunde234/Gitproject.git
+         be6a123..f855d8c  main -> main
