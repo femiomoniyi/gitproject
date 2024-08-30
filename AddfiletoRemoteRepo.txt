@@ -1,0 +1,17 @@
+How to add a file to a remote repo:
+https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
+ 
+step 1
+move the file you intend to update to your local repo e.g touch command
+  
+step 2 
+change your directory to your local repo in bash, use ls next
+   
+step 3    
+stage the file by issuing: git add .
+     
+step 4
+commit the file from inside your local repo : git commit -m filename
+       
+step 5        
+push changes made locally to GitHub: git push origin branch(main)
